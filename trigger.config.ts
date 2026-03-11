@@ -18,7 +18,7 @@ export default defineConfig({
   build: {
     extensions: [
       additionalFiles({
-        files: ["skills_en.csv", "data/scored_skills.csv"],
+        files: ["data/skills_en.csv", "data/scored_skills.csv"],
       }),
     ],
   },

@@ -31,7 +31,7 @@ interface SkillRow {
 export const escoScoringTask = task({
   id: "esco-scoring",
   run: async (payload: { limit?: number }) => {
-    const skillsFilePath = path.join(process.cwd(), "skills_en.csv");
+    const skillsFilePath = path.join(process.cwd(), "data", "skills_en.csv");
     const scoredFilePath = path.join(process.cwd(), "data", "scored_skills.csv");
 
     // Ensure data directory exists
