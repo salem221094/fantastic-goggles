@@ -38,7 +38,7 @@ export async function main(apiKey: string) {
         },
     });
 
-    const results = [];
+    const results: ScoreResult[] = [];
 
     for (const row of rows) {
         const prompt = `Score the following skill based on its relevance:
